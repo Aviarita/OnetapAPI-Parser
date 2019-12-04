@@ -5,3 +5,7 @@
 [Precompiled binary](https://github.com/Aviarita/OnetapAPI-Parser/releases)
 
 [Parsed snippets](https://github.com/Aviarita/OnetapAPI-Parser/blob/master/javascript.json)
+
+
+The created javascript.json file goes into 
+C:\Users\<user>\AppData\Roaming\Code\User\snippets
