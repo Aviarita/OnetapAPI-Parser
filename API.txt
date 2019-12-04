@@ -1,0 +1,162 @@
+PrintChat Global.PrintChat(string text)
+Prints a message in in-game chat.
+Polygon Render.Polygon( [ [ x, y ], [ x1, y1 ], [ x2, y2 ] ], [ R, G, B, A ] );
+Draws a polygon with shape based on arguments passed.
+ragebot_fire ragebot_fire
+Returns information on ragebot_fire event.
+PlaySound Global.PlaySound( string path )
+Plays a sound.
+ToggleHotkey UI.ToggleHotkey(...item)
+Used to toggle hotkey.
+GradientRect Render.GradientRect( x, y, w, h, dir, [ col1 ], [ col2 ] );
+Draws a gradient rectangle with the given position, size, and RGBA color.
+Bullet Trace.Bullet(int ent_index, array start, array end)
+Used to trace bullet between point A and B.
+Line Trace.Line(int ent_index, array start, array end)
+Used to trace line between point A and B.
+GetHitboxPosition Entity.GetHitboxPosition(int ent_index, int hitbox_index)
+Returns an array object with X, Y, Z for hitbox position.
+GetEyePosition Entity.GetEyePosition(int ent_index)
+Returns an array object with X, Y, Z for eye position.
+TextSize Render.TextSize(string, int size [optional])
+Finds the text width size of the given string.
+AddTextbox UI.AddTextbox("string")
+Adds a textbox.
+SetColor UI.SetColor(...item)
+Set color of color picker.
+GetGameRulesProxy Entity.GetGameRulesProxy()
+Returns entity index of game rules entity.
+IsBot Entity.IsBot(ent_index)
+Returns true or false.
+GetWeapon Entity.GetWeapon(ent_index)
+Returns player weapon name.
+AddColorPicker UI.AddColorPicker(string name)
+Adds a color picker.
+AddMultiDropdown UI.AddMultiDropdown(name, items)
+Adds a dropdown with ability to select more items.
+GetMapName Global.GetMapName()
+Returns current map name.
+Realtime Global.Realtime()
+Returns time in seconds since CS:GO was started.
+Frametime Global.Frametime()
+Returns time in seconds it took to render the frame.
+GetString Event.GetString(string)
+Finds the string value of the given game event.
+GetFloat Event.GetFloat(float)
+Finds the float value of the given game event.
+GetInt Event.GetInt(int)
+Finds the integer value of the given game event.
+GetCursorPosition Global.GetCursorPosition()
+Returns an array object with X, Y for cursor position.
+SetString Convar.SetString("cmd", string)
+Sets the string value of the given console command.
+GetString Convar.GetString("cmd")
+Finds the string value of the given console command.
+SetFloat Convar.SetFloat ("cmd", value)
+Sets the float value of the given console command.
+GetFloat Convar.GetFloat("cmd")
+Finds the float value of the given console command.
+SetInt Convar.SetInt("cmd", value)
+Sets the integer value of the given console command.
+GetInt Convar.GetInt("cmd")
+Finds the integer value of the given console command.
+IsMenuOpen UI.IsMenuOpen()
+Returns true if the menu is open, false otherwise.
+AddDropdown UI.AddDropdown(name, items)
+Adds a dropdown.
+AddHotkey UI.AddHotkey(name)
+Adds a label with a key picker control.
+AddSliderFloat UI.AddSliderFloat(name, min_value, max_value)
+Adds a floating-point slider.
+AddSliderInt UI.AddSliderInt(name, min_value, max_value)
+Adds an integer slider.
+AddCheckbox UI.AddCheckbox(name)
+Adds a checkbox control.
+IsHotkeyActive UI.IsHotkeyActive(...item)
+Returns whether a key is currently active or not.
+GetColor UI.GetColor(...item)
+Returns an array of color values from a control.
+GetString UI.GetString (...item)
+Returns a string representation of an item's current value.
+SetEnabled UI.SetEnabled (...item)
+Changes menu item(s) visibility.
+SetValue UI.SetValue (...item, value)
+Sets the value of an UI item's setting.
+GetValue UI.GetValue (...item)
+Returns the value of UI item's setting.
+GetScreenSize Global.GetScreenSize()
+Returns width and height of your screen.
+WorldToScreen Render.WorldToScreen([x, y, z])
+Finds the world position for the given screen position.
+Circle Render.Circle(x, y, r, color)
+Draws a circle with the given position, radius, and RGBA color.
+FilledRect Render.FilledRect(x, y, width, height, color)
+Draws a filled rectangle with the given position, size, and RGBA color.
+Rect Render.Rect(x, y, width, height, color)
+Draws a rectangle with the given position, size, and RGBA color.
+Line Render.Line(x, y, x1, y1, color)
+Draws a line with the given position and RGBA color.
+String Render.String(x, y, align, message, color, int size [optional])
+Draws a string with the given position, align, RGBA color, and size.
+SetProp Entity.SetProp(entity_index, table_name, prop_name, new_value)
+Set value of property.
+GetProp Entity.GetProp(entity_index, table_name, prop_name)
+Returns the value of the property.
+GetRenderOrigin Entity.GetRenderOrigin()
+Returns an array of x, y, z.
+GetName Entity.GetName(entity_index)
+Returns a string that is the player name.
+GetClassName Entity.GetClassName()
+Returns a string that represents the class name instead of the class ID.
+GetClassID Entity.GetClassID(entity_index)
+Returns the class ID.
+IsDormant Entity.IsDormant(entity_index)
+Finds out whether an entity is dormant.
+IsAlive Entity.IsAlive(entity_index)
+Finds out whether an entity is alive.
+IsValid Entity.IsValid(entity index)
+Finds out whether an entity is valid.
+IsLocalPlayer Entity.IsLocalPlayer(entity_index)
+Finds out whether an entity is the local player.
+IsEnemy Entity.IsEnemy(entity index)
+Finds out whether an entity is an enemy.
+IsTeammate Entity.IsTeammate(entity_index)
+Finds out whether an entity is a teammate.
+GetEntityFromUserID Entity.GetEntityFromUserID(userid)
+Finds the entity of the given user id.
+GetLocalPlayer Entity.GetLocalPlayer()
+Returns the entity index of local the player.
+GetTeammates Entity.GetEntities()
+Returns an array of teammate entity indexes.
+GetEnemies Entity.GetEnemies()
+Returns an array of enemy entity indexes.
+GetPlayers Entity.GetPlayers()
+Returns an array of player entity indexes.
+GetEntities Entity.GetEntities()
+Returns an array of entity indexes.
+SetViewAngles Global.SetViewAngles(array)
+Sets user-defined view angles.
+GetViewAngles Global.GetViewAngles()
+Returns array object with pitch, yaw and roll
+Latency Global.Latency()
+Returns local player ping to the server.
+Curtime Global.Curtime()
+Returns the game time in seconds.
+TickInterval Global.TickInterval()
+Returns the time elapsed in one game tick in seconds.
+Tickrate Global.Tickrate()
+Returns server tick settings.
+Tickcount Global.Tickcount()
+Returns amount of ticks elapsed on the server.
+FrameStage Global.FrameStage()
+Returns an integer value of frame stage.
+IsKeyPressed Global.IsKeyPressed(VK_KEY)
+Returns boolean value whether or not a key was pressed.
+RegisterCallback Global.RegisterCallback(callback, function)
+Registers a callback within a said function.
+ExecuteCommand Global.ExecuteCommand(cmd)
+Executing commands in in-game console.
+PrintColor Global.PrintColor([ r, g, b, a ], "Text")
+Printing colored messages to the in-game console.
+Print Global.Print(message)
+Printing messages to the in-game console.

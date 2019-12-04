@@ -1,0 +1,407 @@
+{
+	"GlobalPrintChat":{
+		"prefix": "Global.PrintChat(string text)",
+		"body": "Global.PrintChat(string text)",
+		"description": "Prints a message in in-game chat."
+	},
+	"RenderPolygon":{
+		"prefix": "Render.Polygon( [ [ x, y ], [ x1, y1 ], [ x2, y2 ] ], [ R, G, B, A ] );",
+		"body": "Render.Polygon( [ [ x, y ], [ x1, y1 ], [ x2, y2 ] ], [ R, G, B, A ] );",
+		"description": "Draws a polygon with shape based on arguments passed."
+	},
+	"ragebot_fire":{
+		"prefix": "ragebot_fire",
+		"body": "ragebot_fire",
+		"description": "Returns information on ragebot_fire event."
+	},
+	"GlobalPlaySound":{
+		"prefix": "Global.PlaySound( string path )",
+		"body": "Global.PlaySound( string path )",
+		"description": "Plays a sound."
+	},
+	"UIToggleHotkey":{
+		"prefix": "UI.ToggleHotkey(...item)",
+		"body": "UI.ToggleHotkey(...item)",
+		"description": "Used to toggle hotkey."
+	},
+	"RenderGradientRect":{
+		"prefix": "Render.GradientRect( x, y, w, h, dir, [ col1 ], [ col2 ] );",
+		"body": "Render.GradientRect( x, y, w, h, dir, [ col1 ], [ col2 ] );",
+		"description": "Draws a gradient rectangle with the given position, size, and RGBA color."
+	},
+	"TraceBullet":{
+		"prefix": "Trace.Bullet(int ent_index, array start, array end)",
+		"body": "Trace.Bullet(int ent_index, array start, array end)",
+		"description": "Used to trace bullet between point A and B."
+	},
+	"TraceLine":{
+		"prefix": "Trace.Line(int ent_index, array start, array end)",
+		"body": "Trace.Line(int ent_index, array start, array end)",
+		"description": "Used to trace line between point A and B."
+	},
+	"EntityGetHitboxPosition":{
+		"prefix": "Entity.GetHitboxPosition(int ent_index, int hitbox_index)",
+		"body": "Entity.GetHitboxPosition(int ent_index, int hitbox_index)",
+		"description": "Returns an array object with X, Y, Z for hitbox position."
+	},
+	"EntityGetEyePosition":{
+		"prefix": "Entity.GetEyePosition(int ent_index)",
+		"body": "Entity.GetEyePosition(int ent_index)",
+		"description": "Returns an array object with X, Y, Z for eye position."
+	},
+	"RenderTextSize":{
+		"prefix": "Render.TextSize(string, int size [optional])",
+		"body": "Render.TextSize(string, int size [optional])",
+		"description": "Finds the text width size of the given string."
+	},
+	"UIAddTextbox":{
+		"prefix": "UI.AddTextbox(\"string\")",
+		"body": "UI.AddTextbox(\"string\")",
+		"description": "Adds a textbox."
+	},
+	"UISetColor":{
+		"prefix": "UI.SetColor(...item)",
+		"body": "UI.SetColor(...item)",
+		"description": "Set color of color picker."
+	},
+	"EntityGetGameRulesProxy":{
+		"prefix": "Entity.GetGameRulesProxy()",
+		"body": "Entity.GetGameRulesProxy()",
+		"description": "Returns entity index of game rules entity."
+	},
+	"EntityIsBot":{
+		"prefix": "Entity.IsBot(ent_index)",
+		"body": "Entity.IsBot(ent_index)",
+		"description": "Returns true or false."
+	},
+	"EntityGetWeapon":{
+		"prefix": "Entity.GetWeapon(ent_index)",
+		"body": "Entity.GetWeapon(ent_index)",
+		"description": "Returns player weapon name."
+	},
+	"UIAddColorPicker":{
+		"prefix": "UI.AddColorPicker(string name)",
+		"body": "UI.AddColorPicker(string name)",
+		"description": "Adds a color picker."
+	},
+	"UIAddMultiDropdown":{
+		"prefix": "UI.AddMultiDropdown(name, items)",
+		"body": "UI.AddMultiDropdown(name, items)",
+		"description": "Adds a dropdown with ability to select more items."
+	},
+	"GlobalGetMapName":{
+		"prefix": "Global.GetMapName()",
+		"body": "Global.GetMapName()",
+		"description": "Returns current map name."
+	},
+	"GlobalRealtime":{
+		"prefix": "Global.Realtime()",
+		"body": "Global.Realtime()",
+		"description": "Returns time in seconds since CS:GO was started."
+	},
+	"GlobalFrametime":{
+		"prefix": "Global.Frametime()",
+		"body": "Global.Frametime()",
+		"description": "Returns time in seconds it took to render the frame."
+	},
+	"EventGetString":{
+		"prefix": "Event.GetString(string)",
+		"body": "Event.GetString(string)",
+		"description": "Finds the string value of the given game event."
+	},
+	"EventGetFloat":{
+		"prefix": "Event.GetFloat(float)",
+		"body": "Event.GetFloat(float)",
+		"description": "Finds the float value of the given game event."
+	},
+	"EventGetInt":{
+		"prefix": "Event.GetInt(int)",
+		"body": "Event.GetInt(int)",
+		"description": "Finds the integer value of the given game event."
+	},
+	"GlobalGetCursorPosition":{
+		"prefix": "Global.GetCursorPosition()",
+		"body": "Global.GetCursorPosition()",
+		"description": "Returns an array object with X, Y for cursor position."
+	},
+	"ConvarSetString":{
+		"prefix": "Convar.SetString(\"cmd\", string)",
+		"body": "Convar.SetString(\"cmd\", string)",
+		"description": "Sets the string value of the given console command."
+	},
+	"ConvarGetString":{
+		"prefix": "Convar.GetString(\"cmd\")",
+		"body": "Convar.GetString(\"cmd\")",
+		"description": "Finds the string value of the given console command."
+	},
+	"ConvarSetFloat":{
+		"prefix": "Convar.SetFloat (\"cmd\", value)",
+		"body": "Convar.SetFloat (\"cmd\", value)",
+		"description": "Sets the float value of the given console command."
+	},
+	"ConvarGetFloat":{
+		"prefix": "Convar.GetFloat(\"cmd\")",
+		"body": "Convar.GetFloat(\"cmd\")",
+		"description": "Finds the float value of the given console command."
+	},
+	"ConvarSetInt":{
+		"prefix": "Convar.SetInt(\"cmd\", value)",
+		"body": "Convar.SetInt(\"cmd\", value)",
+		"description": "Sets the integer value of the given console command."
+	},
+	"ConvarGetInt":{
+		"prefix": "Convar.GetInt(\"cmd\")",
+		"body": "Convar.GetInt(\"cmd\")",
+		"description": "Finds the integer value of the given console command."
+	},
+	"UIIsMenuOpen":{
+		"prefix": "UI.IsMenuOpen()",
+		"body": "UI.IsMenuOpen()",
+		"description": "Returns true if the menu is open, false otherwise."
+	},
+	"UIAddDropdown":{
+		"prefix": "UI.AddDropdown(name, items)",
+		"body": "UI.AddDropdown(name, items)",
+		"description": "Adds a dropdown."
+	},
+	"UIAddHotkey":{
+		"prefix": "UI.AddHotkey(name)",
+		"body": "UI.AddHotkey(name)",
+		"description": "Adds a label with a key picker control."
+	},
+	"UIAddSliderFloat":{
+		"prefix": "UI.AddSliderFloat(name, min_value, max_value)",
+		"body": "UI.AddSliderFloat(name, min_value, max_value)",
+		"description": "Adds a floating-point slider."
+	},
+	"UIAddSliderInt":{
+		"prefix": "UI.AddSliderInt(name, min_value, max_value)",
+		"body": "UI.AddSliderInt(name, min_value, max_value)",
+		"description": "Adds an integer slider."
+	},
+	"UIAddCheckbox":{
+		"prefix": "UI.AddCheckbox(name)",
+		"body": "UI.AddCheckbox(name)",
+		"description": "Adds a checkbox control."
+	},
+	"UIIsHotkeyActive":{
+		"prefix": "UI.IsHotkeyActive(...item)",
+		"body": "UI.IsHotkeyActive(...item)",
+		"description": "Returns whether a key is currently active or not."
+	},
+	"UIGetColor":{
+		"prefix": "UI.GetColor(...item)",
+		"body": "UI.GetColor(...item)",
+		"description": "Returns an array of color values from a control."
+	},
+	"UIGetString":{
+		"prefix": "UI.GetString (...item)",
+		"body": "UI.GetString (...item)",
+		"description": "Returns a string representation of an item's current value."
+	},
+	"UISetEnabled":{
+		"prefix": "UI.SetEnabled (...item)",
+		"body": "UI.SetEnabled (...item)",
+		"description": "Changes menu item(s) visibility."
+	},
+	"UISetValue":{
+		"prefix": "UI.SetValue (...item, value)",
+		"body": "UI.SetValue (...item, value)",
+		"description": "Sets the value of an UI item's setting."
+	},
+	"UIGetValue":{
+		"prefix": "UI.GetValue (...item)",
+		"body": "UI.GetValue (...item)",
+		"description": "Returns the value of UI item's setting."
+	},
+	"GlobalGetScreenSize":{
+		"prefix": "Global.GetScreenSize()",
+		"body": "Global.GetScreenSize()",
+		"description": "Returns width and height of your screen."
+	},
+	"RenderWorldToScreen":{
+		"prefix": "Render.WorldToScreen([x, y, z])",
+		"body": "Render.WorldToScreen([x, y, z])",
+		"description": "Finds the world position for the given screen position."
+	},
+	"RenderCircle":{
+		"prefix": "Render.Circle(x, y, r, color)",
+		"body": "Render.Circle(x, y, r, color)",
+		"description": "Draws a circle with the given position, radius, and RGBA color."
+	},
+	"RenderFilledRect":{
+		"prefix": "Render.FilledRect(x, y, width, height, color)",
+		"body": "Render.FilledRect(x, y, width, height, color)",
+		"description": "Draws a filled rectangle with the given position, size, and RGBA color."
+	},
+	"RenderRect":{
+		"prefix": "Render.Rect(x, y, width, height, color)",
+		"body": "Render.Rect(x, y, width, height, color)",
+		"description": "Draws a rectangle with the given position, size, and RGBA color."
+	},
+	"RenderLine":{
+		"prefix": "Render.Line(x, y, x1, y1, color)",
+		"body": "Render.Line(x, y, x1, y1, color)",
+		"description": "Draws a line with the given position and RGBA color."
+	},
+	"RenderString":{
+		"prefix": "Render.String(x, y, align, message, color, int size [optional])",
+		"body": "Render.String(x, y, align, message, color, int size [optional])",
+		"description": "Draws a string with the given position, align, RGBA color, and size."
+	},
+	"EntitySetProp":{
+		"prefix": "Entity.SetProp(entity_index, table_name, prop_name, new_value)",
+		"body": "Entity.SetProp(entity_index, table_name, prop_name, new_value)",
+		"description": "Set value of property."
+	},
+	"EntityGetProp":{
+		"prefix": "Entity.GetProp(entity_index, table_name, prop_name)",
+		"body": "Entity.GetProp(entity_index, table_name, prop_name)",
+		"description": "Returns the value of the property."
+	},
+	"EntityGetRenderOrigin":{
+		"prefix": "Entity.GetRenderOrigin()",
+		"body": "Entity.GetRenderOrigin()",
+		"description": "Returns an array of x, y, z."
+	},
+	"EntityGetName":{
+		"prefix": "Entity.GetName(entity_index)",
+		"body": "Entity.GetName(entity_index)",
+		"description": "Returns a string that is the player name."
+	},
+	"EntityGetClassName":{
+		"prefix": "Entity.GetClassName()",
+		"body": "Entity.GetClassName()",
+		"description": "Returns a string that represents the class name instead of the class ID."
+	},
+	"EntityGetClassID":{
+		"prefix": "Entity.GetClassID(entity_index)",
+		"body": "Entity.GetClassID(entity_index)",
+		"description": "Returns the class ID."
+	},
+	"EntityIsDormant":{
+		"prefix": "Entity.IsDormant(entity_index)",
+		"body": "Entity.IsDormant(entity_index)",
+		"description": "Finds out whether an entity is dormant."
+	},
+	"EntityIsAlive":{
+		"prefix": "Entity.IsAlive(entity_index)",
+		"body": "Entity.IsAlive(entity_index)",
+		"description": "Finds out whether an entity is alive."
+	},
+	"EntityIsValid":{
+		"prefix": "Entity.IsValid(entity index)",
+		"body": "Entity.IsValid(entity index)",
+		"description": "Finds out whether an entity is valid."
+	},
+	"EntityIsLocalPlayer":{
+		"prefix": "Entity.IsLocalPlayer(entity_index)",
+		"body": "Entity.IsLocalPlayer(entity_index)",
+		"description": "Finds out whether an entity is the local player."
+	},
+	"EntityIsEnemy":{
+		"prefix": "Entity.IsEnemy(entity index)",
+		"body": "Entity.IsEnemy(entity index)",
+		"description": "Finds out whether an entity is an enemy."
+	},
+	"EntityIsTeammate":{
+		"prefix": "Entity.IsTeammate(entity_index)",
+		"body": "Entity.IsTeammate(entity_index)",
+		"description": "Finds out whether an entity is a teammate."
+	},
+	"EntityGetEntityFromUserID":{
+		"prefix": "Entity.GetEntityFromUserID(userid)",
+		"body": "Entity.GetEntityFromUserID(userid)",
+		"description": "Finds the entity of the given user id."
+	},
+	"EntityGetLocalPlayer":{
+		"prefix": "Entity.GetLocalPlayer()",
+		"body": "Entity.GetLocalPlayer()",
+		"description": "Returns the entity index of local the player."
+	},
+	"EntityGetEntities":{
+		"prefix": "Entity.GetEntities()",
+		"body": "Entity.GetEntities()",
+		"description": "Returns an array of teammate entity indexes."
+	},
+	"EntityGetEnemies":{
+		"prefix": "Entity.GetEnemies()",
+		"body": "Entity.GetEnemies()",
+		"description": "Returns an array of enemy entity indexes."
+	},
+	"EntityGetPlayers":{
+		"prefix": "Entity.GetPlayers()",
+		"body": "Entity.GetPlayers()",
+		"description": "Returns an array of player entity indexes."
+	},
+	"EntityGetEntities":{
+		"prefix": "Entity.GetEntities()",
+		"body": "Entity.GetEntities()",
+		"description": "Returns an array of entity indexes."
+	},
+	"GlobalSetViewAngles":{
+		"prefix": "Global.SetViewAngles(array)",
+		"body": "Global.SetViewAngles(array)",
+		"description": "Sets user-defined view angles."
+	},
+	"GlobalGetViewAngles":{
+		"prefix": "Global.GetViewAngles()",
+		"body": "Global.GetViewAngles()",
+		"description": "Returns array object with pitch, yaw and roll"
+	},
+	"GlobalLatency":{
+		"prefix": "Global.Latency()",
+		"body": "Global.Latency()",
+		"description": "Returns local player ping to the server."
+	},
+	"GlobalCurtime":{
+		"prefix": "Global.Curtime()",
+		"body": "Global.Curtime()",
+		"description": "Returns the game time in seconds."
+	},
+	"GlobalTickInterval":{
+		"prefix": "Global.TickInterval()",
+		"body": "Global.TickInterval()",
+		"description": "Returns the time elapsed in one game tick in seconds."
+	},
+	"GlobalTickrate":{
+		"prefix": "Global.Tickrate()",
+		"body": "Global.Tickrate()",
+		"description": "Returns server tick settings."
+	},
+	"GlobalTickcount":{
+		"prefix": "Global.Tickcount()",
+		"body": "Global.Tickcount()",
+		"description": "Returns amount of ticks elapsed on the server."
+	},
+	"GlobalFrameStage":{
+		"prefix": "Global.FrameStage()",
+		"body": "Global.FrameStage()",
+		"description": "Returns an integer value of frame stage."
+	},
+	"GlobalIsKeyPressed":{
+		"prefix": "Global.IsKeyPressed(VK_KEY)",
+		"body": "Global.IsKeyPressed(VK_KEY)",
+		"description": "Returns boolean value whether or not a key was pressed."
+	},
+	"GlobalRegisterCallback":{
+		"prefix": "Global.RegisterCallback(callback, function)",
+		"body": "Global.RegisterCallback(callback, function)",
+		"description": "Registers a callback within a said function."
+	},
+	"GlobalExecuteCommand":{
+		"prefix": "Global.ExecuteCommand(cmd)",
+		"body": "Global.ExecuteCommand(cmd)",
+		"description": "Executing commands in in-game console."
+	},
+	"GlobalPrintColor":{
+		"prefix": "Global.PrintColor([ r, g, b, a ], \"Text\")",
+		"body": "Global.PrintColor([ r, g, b, a ], \"Text\")",
+		"description": "Printing colored messages to the in-game console."
+	},
+	"GlobalPrint":{
+		"prefix": "Global.Print(message)",
+		"body": "Global.Print(message)",
+		"description": "Printing messages to the in-game console."
+	}
+}
