@@ -8,4 +8,4 @@
 
 
 The created javascript.json file goes into 
-C:\Users\<user>\AppData\Roaming\Code\User\snippets
+C:\Users\\\<user\>\AppData\Roaming\Code\User\snippets
