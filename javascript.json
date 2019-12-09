@@ -1,103 +1,33 @@
 {
-	"GlobalPrintChat":{
-		"prefix": "Global.PrintChat(string text)",
-		"body": "Global.PrintChat(string text)",
-		"description": "Prints a message in in-game chat."
-	},
-	"GlobalPlaySound":{
-		"prefix": "Global.PlaySound( string path )",
-		"body": "Global.PlaySound( string path )",
-		"description": "Plays a sound."
-	},
-	"GlobalGetMapName":{
-		"prefix": "Global.GetMapName()",
-		"body": "Global.GetMapName()",
-		"description": "Returns current map name."
-	},
-	"GlobalRealtime":{
-		"prefix": "Global.Realtime()",
-		"body": "Global.Realtime()",
+	"GlobalsRealtime":{
+		"prefix": "Globals.Realtime()",
+		"body": "Globals.Realtime()",
 		"description": "Returns time in seconds since CS:GO was started."
 	},
-	"GlobalFrametime":{
-		"prefix": "Global.Frametime()",
-		"body": "Global.Frametime()",
+	"GlobalsFrametime":{
+		"prefix": "Globals.Frametime()",
+		"body": "Globals.Frametime()",
 		"description": "Returns time in seconds it took to render the frame."
 	},
-	"GlobalGetCursorPosition":{
-		"prefix": "Global.GetCursorPosition()",
-		"body": "Global.GetCursorPosition()",
-		"description": "Returns an array object with X, Y for cursor position."
-	},
-	"GlobalGetScreenSize":{
-		"prefix": "Global.GetScreenSize()",
-		"body": "Global.GetScreenSize()",
-		"description": "Returns width and height of your screen."
-	},
-	"GlobalSetViewAngles":{
-		"prefix": "Global.SetViewAngles(array)",
-		"body": "Global.SetViewAngles(array)",
-		"description": "Sets user-defined view angles."
-	},
-	"GlobalGetViewAngles":{
-		"prefix": "Global.GetViewAngles()",
-		"body": "Global.GetViewAngles()",
-		"description": "Returns array object with pitch, yaw and roll"
-	},
-	"GlobalLatency":{
-		"prefix": "Global.Latency()",
-		"body": "Global.Latency()",
-		"description": "Returns local player ping to the server."
-	},
-	"GlobalCurtime":{
-		"prefix": "Global.Curtime()",
-		"body": "Global.Curtime()",
+	"GlobalsCurtime":{
+		"prefix": "Globals.Curtime()",
+		"body": "Globals.Curtime()",
 		"description": "Returns the game time in seconds."
 	},
-	"GlobalTickInterval":{
-		"prefix": "Global.TickInterval()",
-		"body": "Global.TickInterval()",
+	"GlobalsTickInterval":{
+		"prefix": "Globals.TickInterval()",
+		"body": "Globals.TickInterval()",
 		"description": "Returns the time elapsed in one game tick in seconds."
 	},
-	"GlobalTickrate":{
-		"prefix": "Global.Tickrate()",
-		"body": "Global.Tickrate()",
+	"GlobalsTickrate":{
+		"prefix": "Globals.Tickrate()",
+		"body": "Globals.Tickrate()",
 		"description": "Returns server tick settings."
 	},
-	"GlobalTickcount":{
-		"prefix": "Global.Tickcount()",
-		"body": "Global.Tickcount()",
+	"GlobalsTickcount":{
+		"prefix": "Globals.Tickcount()",
+		"body": "Globals.Tickcount()",
 		"description": "Returns amount of ticks elapsed on the server."
-	},
-	"GlobalFrameStage":{
-		"prefix": "Global.FrameStage()",
-		"body": "Global.FrameStage()",
-		"description": "Returns an integer value of frame stage."
-	},
-	"GlobalIsKeyPressed":{
-		"prefix": "Global.IsKeyPressed(VK_KEY)",
-		"body": "Global.IsKeyPressed(VK_KEY)",
-		"description": "Returns boolean value whether or not a key was pressed."
-	},
-	"GlobalRegisterCallback":{
-		"prefix": "Global.RegisterCallback(callback, function)",
-		"body": "Global.RegisterCallback(callback, function)",
-		"description": "Registers a callback within a said function."
-	},
-	"GlobalExecuteCommand":{
-		"prefix": "Global.ExecuteCommand(cmd)",
-		"body": "Global.ExecuteCommand(cmd)",
-		"description": "Executing commands in in-game console."
-	},
-	"GlobalPrintColor":{
-		"prefix": "Global.PrintColor([ r, g, b, a ], \"Text\")",
-		"body": "Global.PrintColor([ r, g, b, a ], \"Text\")",
-		"description": "Printing colored messages to the in-game console."
-	},
-	"GlobalPrint":{
-		"prefix": "Global.Print(message)",
-		"body": "Global.Print(message)",
-		"description": "Printing messages to the in-game console."
 	},
 	"UIAddLabel":{
 		"prefix": "UI.AddLabel(string)",
@@ -309,6 +239,26 @@
 		"body": "Entity.GetEntities()",
 		"description": "Returns an array of entity indexes."
 	},
+	"RenderTextSizeCustom":{
+		"prefix": "Render.TextSizeCustom( string text, font );",
+		"body": "Render.TextSizeCustom( string text, font );",
+		"description": "Finds the text width size of the given string with custom font."
+	},
+	"RenderStringCustom":{
+		"prefix": "Render.StringCustom( int x, int y, int align, string text, [ color ], font );",
+		"body": "Render.StringCustom( int x, int y, int align, string text, [ color ], font );",
+		"description": "Used to draw string with custom font."
+	},
+	"RenderFindFont":{
+		"prefix": "Render.FindFont( string name, int size, int weight );",
+		"body": "Render.FindFont( string name, int size, int weight );",
+		"description": "Used to search for font identifier."
+	},
+	"RenderAddFont":{
+		"prefix": "Render.AddFont( string name, int size, int weight )",
+		"body": "Render.AddFont( string name, int size, int weight )",
+		"description": "Adds a custom font."
+	},
 	"RenderPolygon":{
 		"prefix": "Render.Polygon( [ [ x, y ], [ x1, y1 ], [ x2, y2 ] ], [ R, G, B, A ] );",
 		"body": "Render.Polygon( [ [ x, y ], [ x1, y1 ], [ x2, y2 ] ], [ R, G, B, A ] );",
@@ -323,6 +273,11 @@
 		"prefix": "Render.TextSize(string, int size [optional])",
 		"body": "Render.TextSize(string, int size [optional])",
 		"description": "Finds the text width size of the given string."
+	},
+	"RenderGetScreenSize":{
+		"prefix": "Render.GetScreenSize()",
+		"body": "Render.GetScreenSize()",
+		"description": "Returns width and height of your screen."
 	},
 	"RenderWorldToScreen":{
 		"prefix": "Render.WorldToScreen([x, y, z])",
@@ -433,5 +388,115 @@
 		"prefix": "UserCMD.SetMovement([forwardmove, sidemove, upmove])",
 		"body": "UserCMD.SetMovement([forwardmove, sidemove, upmove])",
 		"description": "Control user movement."
+	},
+	"SoundStopMicrophone":{
+		"prefix": "Sound.StopMicrophone( );",
+		"body": "Sound.StopMicrophone( );",
+		"description": "Used to stop Sound.PlayMicrophone"
+	},
+	"SoundPlayMicrophone":{
+		"prefix": "Sound.PlayMicrophone(path)",
+		"body": "Sound.PlayMicrophone(path)",
+		"description": "Plays a sound on microphone."
+	},
+	"SoundPlay":{
+		"prefix": "Sound.Play( string path )",
+		"body": "Sound.Play( string path )",
+		"description": "Plays a sound."
+	},
+	"LocalGetInaccuracy":{
+		"prefix": "Local.GetInaccuracy();",
+		"body": "Local.GetInaccuracy();",
+		"description": "Returns inaccuracy."
+	},
+	"LocalGetSpread":{
+		"prefix": "Local.GetSpread();",
+		"body": "Local.GetSpread();",
+		"description": "Returns spread."
+	},
+	"LocalGetFakeYaw":{
+		"prefix": "Local.GetFakeYaw();",
+		"body": "Local.GetFakeYaw();",
+		"description": "Returns fake yaw angle."
+	},
+	"LocalGetRealYaw":{
+		"prefix": "Local.GetRealYaw();",
+		"body": "Local.GetRealYaw();",
+		"description": "Returns real yaw angle."
+	},
+	"LocalSetClanTag":{
+		"prefix": "Local.SetClanTag(string text);",
+		"body": "Local.SetClanTag(string text);",
+		"description": "Used to set clan tag."
+	},
+	"LocalSetViewAngles":{
+		"prefix": "Local.SetViewAngles(array)",
+		"body": "Local.SetViewAngles(array)",
+		"description": "Sets user-defined view angles."
+	},
+	"LocalGetViewAngles":{
+		"prefix": "Local.GetViewAngles()",
+		"body": "Local.GetViewAngles()",
+		"description": "Returns array object with pitch, yaw and roll"
+	},
+	"LocalLatency":{
+		"prefix": "Local.Latency()",
+		"body": "Local.Latency()",
+		"description": "Returns local player ping to the server."
+	},
+	"CheatGetUsername":{
+		"prefix": "Cheat.GetUsername();",
+		"body": "Cheat.GetUsername();",
+		"description": "Returns forum username."
+	},
+	"CheatPrintChat":{
+		"prefix": "Cheat.PrintChat(string text)",
+		"body": "Cheat.PrintChat(string text)",
+		"description": "Prints a message in in-game chat."
+	},
+	"CheatFrameStage":{
+		"prefix": "Cheat.FrameStage()",
+		"body": "Cheat.FrameStage()",
+		"description": "Returns an integer value of frame stage."
+	},
+	"CheatRegisterCallback":{
+		"prefix": "Cheat.RegisterCallback(callback, function)",
+		"body": "Cheat.RegisterCallback(callback, function)",
+		"description": "Registers a callback within a said function."
+	},
+	"CheatExecuteCommand":{
+		"prefix": "Cheat.ExecuteCommand(cmd)",
+		"body": "Cheat.ExecuteCommand(cmd)",
+		"description": "Executing commands in in-game console."
+	},
+	"CheatPrintColor":{
+		"prefix": "Cheat.PrintColor([ r, g, b, a ], \"Text\")",
+		"body": "Cheat.PrintColor([ r, g, b, a ], \"Text\")",
+		"description": "Printing colored messages to the in-game console."
+	},
+	"CheatPrint":{
+		"prefix": "Cheat.Print(message)",
+		"body": "Cheat.Print(message)",
+		"description": "Printing messages to the in-game console."
+	},
+	"InputGetCursorPosition":{
+		"prefix": "Input.GetCursorPosition()",
+		"body": "Input.GetCursorPosition()",
+		"description": "Returns an array object with X, Y for cursor position."
+	},
+	"InputIsKeyPressed":{
+		"prefix": "Input.IsKeyPressed(VK_KEY)",
+		"body": "Input.IsKeyPressed(VK_KEY)",
+		"description": "Returns boolean value whether or not a key was pressed."
+	},
+	"WorldGetServerString":{
+		"prefix": "World.GetServerString();",
+		"body": "World.GetServerString();",
+		"description": "Returns server IP."
+	},
+	"GlobalGetMapName":{
+		"prefix": "Global.GetMapName()",
+		"body": "Global.GetMapName()",
+		"description": "Returns current map name."
 	},
 }
