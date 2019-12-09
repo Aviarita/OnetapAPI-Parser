@@ -196,3 +196,5 @@ GetSpread Local.GetSpread()
 Returns spread.
 GetInaccuracy Local.GetInaccuracy()
 Returns inaccuracy.
+GetServerString World.GetServerString()
+Returns server IP.
