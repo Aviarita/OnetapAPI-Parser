@@ -1,45 +1,53 @@
-PrintChat Global.PrintChat(string text)
+PrintChat Cheat.PrintChat(string text)
 Prints a message in in-game chat.
-PlaySound Global.PlaySound( string path )
+PlaySound Sound.Play( string path )
 Plays a sound.
-GetMapName Global.GetMapName()
+GetMapName World.GetMapName()
 Returns current map name.
-Realtime Global.Realtime()
+Realtime Globals.Realtime()
 Returns time in seconds since CS:GO was started.
-Frametime Global.Frametime()
+Frametime Globals.Frametime()
 Returns time in seconds it took to render the frame.
-GetCursorPosition Global.GetCursorPosition()
+GetCursorPosition Input.GetCursorPosition()
 Returns an array object with X, Y for cursor position.
-GetScreenSize Global.GetScreenSize()
+GetScreenSize Render.GetScreenSize()
 Returns width and height of your screen.
-SetViewAngles Global.SetViewAngles(array)
+SetViewAngles Local.SetViewAngles(array)
 Sets user-defined view angles.
-GetViewAngles Global.GetViewAngles()
+GetViewAngles Local.GetViewAngles()
 Returns array object with pitch, yaw and roll
-Latency Global.Latency()
+Latency Local.Latency()
 Returns local player ping to the server.
-Curtime Global.Curtime()
+Curtime Globals.Curtime()
 Returns the game time in seconds.
-TickInterval Global.TickInterval()
+TickInterval Globals.TickInterval()
 Returns the time elapsed in one game tick in seconds.
-Tickrate Global.Tickrate()
+Tickrate Globals.Tickrate()
 Returns server tick settings.
-Tickcount Global.Tickcount()
+Tickcount Globals.Tickcount()
 Returns amount of ticks elapsed on the server.
-FrameStage Global.FrameStage()
+FrameStage Cheat.FrameStage()
 Returns an integer value of frame stage.
-IsKeyPressed Global.IsKeyPressed(VK_KEY)
+IsKeyPressed Input.IsKeyPressed(VK_KEY)
 Returns boolean value whether or not a key was pressed.
-RegisterCallback Global.RegisterCallback(callback, function)
+RegisterCallback Cheat.RegisterCallback(callback, function)
 Registers a callback within a said function.
-ExecuteCommand Global.ExecuteCommand(cmd)
+ExecuteCommand Cheat.ExecuteCommand(cmd)
 Executing commands in in-game console.
-PrintColor Global.PrintColor([ r, g, b, a ], "Text")
+PrintColor Cheat.PrintColor([ r, g, b, a ], "Text")
 Printing colored messages to the in-game console.
-Print Global.Print(message)
+Print Cheat.Print(message)
 Printing messages to the in-game console.
 AddLabel UI.AddLabel(string)
 Adds a text label.
+AddFont Render.AddFont(  name,  size,  weight )
+Adds custom font.
+FindFont Render.FindFont(  name,  size,  weight )
+Search for custom font.
+StringCustom Render.StringCustom(  x,  y,  align,  text, [ color ], font )
+Draws a string with custom font.
+TextSizeCustom Render.TextSizeCustom( string text, font );
+Finds the text width size of the given string with custom font
 ToggleHotkey UI.ToggleHotkey(...item)
 Used to toggle hotkey.
 AddTextbox UI.AddTextbox("string")
@@ -172,3 +180,19 @@ SetAngles UserCMD.SetAngles([pitch, yaw, roll])
 Control user angles.
 SetMovement UserCMD.SetMovement([forwardmove, sidemove, upmove])
 Control user movement.
+GetUsername Cheat.GetUsername()
+Returns forum username.
+SetClanTag Local.SetClanTag(string text);
+Used to set clan tag.
+PlayMicrophone Sound.PlayMicrophone(path)
+Plays a sound on microphone.
+StopMicrophone Sound.StopMicrophone()
+Used to stop Sound.PlayMicrophone.
+GetRealYaw Local.GetRealYaw()
+Returns real yaw angle.
+GetFakeYaw Local.GetFakeYaw()
+Returns fake yaw angle.
+GetSpread Local.GetSpread()
+Returns spread.
+GetInaccuracy Local.GetInaccuracy()
+Returns inaccuracy.
